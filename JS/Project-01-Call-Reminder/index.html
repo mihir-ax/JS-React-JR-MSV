@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Call - Dark Theme</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="marquee-wrapper">
+        <div class="marquee-track">
+            <span>MiHiR SEN</span>
+            <span>MiHiR SEN</span>
+            <span>MiHiR SEN</span>
+            <span>MiHiR SEN</span>
+            <span>MiHiR SEN</span>
+            <span>MiHiR SEN</span>
+            <span>MiHiR SEN</span>
+            <span>MiHiR SEN</span>
+            <!-- Duplicate for seamless loop -->
+            <span>MiHiR SEN</span>
+            <span>MiHiR SEN</span>
+            <span>MiHiR SEN</span>
+            <span>MiHiR SEN</span>
+            <span>MiHiR SEN</span>
+            <span>MiHiR SEN</span>
+            <span>MiHiR SEN</span>
+            <span>MiHiR SEN</span>
+        </div>
+    </div>
+
+
+    <!-- !! card !! -->
+    <div class="form-container">
+        <div class="card-preview">
+            <div class="card" id="previewCard">
+                <!-- Left Action Buttons -->
+                <div class="left-actions">
+                    <button id="add" class="action-btn"><i class="fas fa-plus"></i></button>
+                    <button id="previous" class="action-btn"><i class="fas fa-arrow-up"></i></button>
+                    <button id="next" class="action-btn"><i class="fas fa-arrow-down"></i></button>
+                </div>
+                <!-- ======= ORIGINAL CARD ======= -->
+                <div class="main-card-wrapper">
+                    <!-- <div class="card-header">
+                        <img src="https://i.pinimg.com/736x/e0/8d/03/e08d032c2cc5e27ead721a7eae7b9358.jpg" alt="Avatar" class="card-avatar">
+                        <div>
+                            <div class="card-name" class="cardName">Ananya</div>
+                            <div style="color: #666; font-size: 13px;" class="cardPurpose">Bas Aise Hi</div>
+                        </div>
+                    </div>
+                    <div class="card-meta">
+                        <div class="meta-row">
+                            <span>Home town</span>
+                            <span class="cardHometown">Patna</span>
+                        </div>
+                        <div class="meta-row">
+                            <span>Bookings</span>
+                            <span class="cardBookings">3 times</span>
+                        </div>
+                    </div>
+                    <div class="card-actions">
+                        <button class="btn-call"><i class="fas fa-phone"></i> Call</button>
+                        <button class="btn-message">Message</button>
+                    </div> -->
+                </div>
+                <div class="center">
+                    <span class="nothing hidden errorr">No Note Found ADD first !</span>
+                </div>
+                <!-- Color Picker -->
+                <div class="color-picker">
+                    <div class="color-dot black active"></div>
+                    <div class="color-dot purple"></div>
+                    <div class="color-dot brown"></div>
+                    <div class="color-dot teal"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Form Section -->
+    <form id="callForm" class="hidden">
+        <div class="form-header">
+            <h2>New Call</h2>
+            <p>Create a new contact entry</p>
+        </div>
+        <div class="input-group">
+            <label>Image URL</label>
+            <input id="dp-url" type="url" placeholder="https://example.com/photo.jpg" id="imageUrl">
+        </div>
+        <div class="input-group">
+            <label>Full Name</label>
+            <input type="text" placeholder="Enter full name" id="fullName">
+        </div>
+        <div class="input-group">
+            <label>Home Town</label>
+            <input type="text" placeholder="Enter home town" id="homeTown">
+        </div>
+        <div class="input-group">
+            <label>Purpose</label>
+            <textarea placeholder="e.g., Quick appointment note" id="purpose"></textarea>
+        </div>
+        <div class="category-section">
+            <label>Category</label>
+            <div class="category-pills">
+                <div class="pill emergency">
+                    <input type="radio" id="emergency" name="category">
+                    <label for="emergency"><i class="fas fa-exclamation"></i> Emergency</label>
+                </div>
+                <div class="pill important">
+                    <input type="radio" id="important" name="category">
+                    <label for="important"><i class="fas fa-star"></i> Important</label>
+                </div>
+                <div class="pill urgent">
+                    <input type="radio" id="urgent" name="category">
+                    <label for="urgent"><i class="fas fa-clock"></i> Urgent</label>
+                </div>
+                <div class="pill norush">
+                    <input type="radio" id="norush" name="category">
+                    <label for="norush"><i class="fas fa-coffee"></i> No Rush</label>
+                </div>
+            </div>
+        </div>
+        <div class="btn-group">
+            <button type="submit" class="btn btn-primary">Create Note</button>
+            <button type="button" class="btn btn-secondary">Close</button>
+        </div>
+    </form>
+
+    <div class="hidden error"><h1>Fill All Fields</h1></div>
+    <script src="script.js"></script>
+</body>
+</html>
