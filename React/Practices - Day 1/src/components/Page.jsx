@@ -19,6 +19,15 @@ function Page() {
           followers="50k+"
         />
 
+        <Card
+          img="https://i.pinimg.com/736x/6e/42/a9/6e42a97b73491894e7971781772851ae.jpg"
+          name="Alone Boy"
+          role="Single"
+          bio="Just be alone and do anything and enjoy your freedom !!"
+          projects="40+"
+          followers="70k+"
+        />
+
         {/* <Card img="" */}
       </div>
     </div>
