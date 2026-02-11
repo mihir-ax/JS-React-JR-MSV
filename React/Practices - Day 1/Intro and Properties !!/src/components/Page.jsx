@@ -25,10 +25,8 @@ function Page() {
           role="Single"
           bio="Just be alone and do anything and enjoy your freedom !!"
           projects="40+"
-          followers="70k+" 
+          followers="70k+"
         />
-
-        {/* <Card img="" */}
       </div>
     </div>
   );
