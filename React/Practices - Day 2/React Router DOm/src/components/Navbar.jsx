@@ -14,13 +14,17 @@ function Navbar() {
         </p>
 
         <p className="text-neutral-300 hover:text-white cursor-pointer transition-colors duration-200">
+          <Link to={"/products"}>Products</Link>
+        </p>
+
+        <p className="text-neutral-300 hover:text-white cursor-pointer transition-colors duration-200">
           <Link to={"/about"}>About</Link>
         </p>
 
         <p className="text-neutral-300 hover:text-white cursor-pointer transition-colors duration-200">
           <Link to={"/contact-us"}>Contact-US</Link>
         </p>
-        
+
         <p className="text-neutral-300 hover:text-white cursor-pointer transition-colors duration-200">
           <Link to={"/king/mihir"}>MiHiR</Link>
         </p>
