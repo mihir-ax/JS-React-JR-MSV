@@ -34,7 +34,7 @@ function Button() {
         className="min-h-screen min-w-screen bg-cover bg-center bg-no-repeat flex flex-col items-center justify-center gap-12 p-8 relative"
         style={{
           backgroundImage:
-            "url('https://res.cloudinary.com/dlr5sim3j/image/upload/v1770885828/image-host/xqpzszr8hkho1jlmkko1.jpg')",
+            "url('https://res.cloudinary.com/dlr5sim3j/image/upload/v1770906404/image-host/e8fcvac4janqtn6pvbpy.png')",
         }}
       >
         <div className="absolute inset-0 bg-black/60 backdrop-blur-sm"></div>
