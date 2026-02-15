@@ -3,13 +3,13 @@ import React, { useEffect, useState } from "react";
 function Notes() {
   const [notes, setNotes] = useState([]);
 
-  // useEffect(() => {
-  //   const data = JSON.parse(localStorage.getItem("notes-MSV"));
+  useEffect(() => {
+    const data = JSON.parse(localStorage.getItem("notes-MSV"));
 
-  //   if (data.length > 0) {
-  //     setNotes(data);
-  //   }
-  // }, []);
+    if (data.length > 0) {
+      setNotes(data);
+    }
+  }, []);
 
   function formSubmit(el) {
     el.preventDefault();
@@ -23,7 +23,7 @@ function Notes() {
 
     setNotes(updatedNotes);
 
-    // localStorage.setItem("notes-MSV", JSON.stringify(updatedNotes));
+    localStorage.setItem("notes-MSV", JSON.stringify(updatedNotes));
   }
 
   return (
